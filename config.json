@@ -1,0 +1,16 @@
+{
+    "ConfigInstructions": "Json write test",
+    "IPConfigs": [
+        {
+            "CENTRAL_CONTROL_IP": "192.168.0.125",
+            "PLC_IP": "192.168.0.123",
+            "VISUAL_IP": "192.168.0.124"
+        }
+    ],
+    "PortConfigs": {
+        "CENTRAL_CONTROL_PORT": "80000",
+        "PLC_PORT": "60000",
+        "VISUAL_PORT": "70000",
+		"LOG_LEVEL":"5"
+    }
+}
