@@ -358,6 +358,7 @@ void TopMainWindow::slot_rev_normal_take_picture_msg(QByteArray datasign)
         }
         else if (((datasign[3] & 0xFF) == 0x14)&&((datasign[2] & 0xFF) == 0x50))
         {
+            m_pRevSign2 = true;
             if((datasign[0]&0xFF)==0x01)//upper2 camera take picture
             {
                 GDataFactory::get_vision_obj()->set_current_take_picture_camera_id(3);
