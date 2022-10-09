@@ -661,7 +661,7 @@ void TopMainWindow::slot_rev_result_from_vision(int camera_id,QList<double> lstM
 
             make_plc_msg_and_send(2,1,tmpdata1,ADDRESS_D250,tmpBdType);
 
-            m_timer_D100 = startTimer(1000);
+            m_timer_D200 = startTimer(1000);
             emit signal_send_vision_info(1,lstM);//UI display
             return;
         }
